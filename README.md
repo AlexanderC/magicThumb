@@ -1,1 +1,1 @@
-===== In order to get started- just visit http://blog.alexanderc.me/2013/06/25/text.jquery-magic-select-plugin-homepage/ =====
+In order to get started- just visit http://blog.alexanderc.me/2013/06/25/text.jquery-magic-select-plugin-homepage/
