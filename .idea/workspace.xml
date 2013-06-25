@@ -5,9 +5,9 @@
     <ignored path="lasso.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372104384690" ignored="false" />
-    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372159038299" ignored="false" />
-    <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372149582827" ignored="false" />
-    <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372147944173" ignored="false" />
+    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372171885180" ignored="false" />
+    <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372171832304" ignored="false" />
+    <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372170155448" ignored="false" />
     <file path="/README.md" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372117963903" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.67207205">
+            <state line="37" column="19" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-3.2368422">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.magicSelect.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.magicSelect.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jquery.magicSelect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="64" selection-start="4492" selection-end="4492" vertical-scroll-proportion="-3.3846154">
+            <state line="202" column="51" selection-start="7991" selection-end="7991" vertical-scroll-proportion="1.0811745">
               <folding />
             </state>
           </provider>
@@ -69,8 +69,8 @@
         <option value="$PROJECT_DIR$/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/js/jquery.lasso.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/js/jquery.magicSelect.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/jquery.magicSelect.js" />
       </list>
     </option>
   </component>
@@ -307,16 +307,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.magicSelect.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="64" selection-start="4492" selection-end="4492" vertical-scroll-proportion="-3.3846154">
+        <state line="37" column="19" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-3.2368422">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/jquery.magicSelect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.67207205">
+        <state line="202" column="51" selection-start="7991" selection-end="7991" vertical-scroll-proportion="1.0811745">
           <folding />
         </state>
       </provider>

@@ -35,7 +35,7 @@
             height: 100%;
             overflow-x: hidden;
             position: relative;
-            padding: 20px;
+            margin: 20px;
         }
 
         .container .item {

@@ -155,10 +155,11 @@
             var areaClone = $(areaCloneHtml);
             areaClone.css(areaCloneCss);
             areaClone.appendTo(area);
-            areaClone.css({
-                width: area[0].scrollWidth + "px",
-                height: area[0].scrollHeight + "px"
-            });
+            var areaDimensions = {
+                width: area.outerWidth() + "px",
+                height: area.outerHeight() + "px"
+            };
+            areaClone.css(areaDimensions);
 
             var lasso = $(lassoHtml);
             lasso.css(lassoStyle);
@@ -169,16 +170,26 @@
             var lassoStartPosition = {};
             var lassoScrollStartPosition = {};
 
-            var mainScrollEvent = "scroll" + eventsNamespace + " scrollUp" + eventsNamespace;
+            var mainScrollEvent = "scroll" + eventsNamespace;
 
             // this can happen when mouseUp outside container
             $(window).bind(mouseUpWindowEvent, function () {
                 logic.stopLassoMoving(areaClone);
-                $(window).unbind(mouseUpWindowEvent);
                 area.unbind(mainScrollEvent);
+                $("body").unbind(mainScrollEvent);
+                $(window).unbind(mouseUpWindowEvent);
             });
 
             var lastMouseEventOnArea = null;
+
+            $("body").bind(mainScrollEvent, function(event) {
+                var areaOffset = area.offset();
+
+                if(areaOffset.top > 0) {
+                    areaClone.trigger(lastMouseEventOnArea);
+                }
+            });
+
             area.bind(mainScrollEvent, function(event) {
                 areaClone.trigger(lastMouseEventOnArea);
             });
@@ -187,10 +198,13 @@
                 lastMouseEventOnArea = $.extend($.Event(event.type), event);
 
                 if (fn.elementExistsAlongsideRemoving(areaClone)) {
-                    var realOffset = {left: event.clientX, top: event.clientY};
+                    var realOffset = {left: event.pageX, top: event.pageY};
+
+                    var areaOffset = area.offset();
+
                     var newLassoScrollPosition = {
-                        top: area.scrollTop(),
-                        left: area.scrollLeft()
+                        top: area.scrollTop() - (areaOffset.top > 0 ? areaOffset.top : 0),
+                        left: area.scrollLeft() - (areaOffset.left > 0 ? areaOffset.left : 0)
                     };
                     var info = {};
 
