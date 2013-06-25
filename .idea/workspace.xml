@@ -5,9 +5,9 @@
     <ignored path="lasso.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372104384690" ignored="false" />
-    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372116697202" ignored="false" />
-    <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372116944750" ignored="false" />
-    <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372111279405" ignored="false" />
+    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372145921322" ignored="false" />
+    <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372149582827" ignored="false" />
+    <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372147944173" ignored="false" />
     <file path="/README.md" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372117963903" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +31,22 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="62" selection-start="423" selection-end="423" vertical-scroll-proportion="-8.125">
+            <state line="29" column="31" selection-start="846" selection-end="846" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.magicSelect.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.magicSelect.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jquery.magicSelect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="62" selection-start="9531" selection-end="9531" vertical-scroll-proportion="-7.6538463">
+            <state line="105" column="64" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.159132">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -68,9 +68,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/js/jquery.lasso.js" />
-        <option value="$PROJECT_DIR$/js/jquery.magicSelect.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/jquery.magicSelect.js" />
       </list>
     </option>
   </component>
@@ -300,23 +300,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="423" selection-end="423" vertical-scroll-proportion="-8.125">
+        <state line="29" column="31" selection-start="846" selection-end="846" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.magicSelect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="62" selection-start="9531" selection-end="9531" vertical-scroll-proportion="-7.6538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="105" column="64" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.159132">
           <folding />
         </state>
       </provider>

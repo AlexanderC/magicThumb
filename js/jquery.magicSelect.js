@@ -52,7 +52,7 @@
     }; // style extending main selecting area while doing selection
     var areaCloneHtml = '<div class="active-lasso-clone-area"></div>'; // html of the clone area inserted while selecting
     var areaCloneCss = {
-        position: "absolute",
+        position: "fixed",
         margin: 0,
         padding: 0,
         "z-index": 10,
@@ -167,16 +167,31 @@
             areaClone.show();
 
             var lassoStartPosition = {};
+            var lassoScrollStartPosition = {};
+
+            var mainScrollEvent = "scroll" + eventsNamespace + " scrollUp" + eventsNamespace;
 
             // this can happen when mouseUp outside container
             $(window).bind(mouseUpWindowEvent, function () {
                 logic.stopLassoMoving(areaClone);
                 $(window).unbind(mouseUpWindowEvent);
+                area.unbind(mainScrollEvent);
+            });
+
+            var lastMouseEventOnArea = null;
+            area.bind(mainScrollEvent, function(event) {
+                areaClone.trigger(lastMouseEventOnArea);
             });
 
             areaClone.bind(areaEvent, function (event) {
+                lastMouseEventOnArea = $.extend($.Event(event.type), event);
+
                 if (fn.elementExistsAlongsideRemoving(areaClone)) {
                     var realOffset = {left: event.clientX, top: event.clientY};
+                    var newLassoScrollPosition = {
+                        top: area.scrollTop(),
+                        left: area.scrollLeft()
+                    };
                     var info = {};
 
                     if ($.isEmptyObject(lassoStartPosition)) {
@@ -192,8 +207,18 @@
 
                         info = $.extend({width: 0, height: 0}, lassoStartPosition);
 
+                        lassoScrollStartPosition = newLassoScrollPosition;
+
                         lasso.show();
                     } else {
+                        var lassoTopDiff = (newLassoScrollPosition.top - lassoScrollStartPosition.top);
+                        var lassoLeftDiff = (newLassoScrollPosition.left - lassoScrollStartPosition.left);
+
+                        lassoStartPosition.top -= lassoTopDiff;
+                        lassoStartPosition.left -= lassoLeftDiff;
+                        // and reset old position
+                        lassoScrollStartPosition = newLassoScrollPosition;
+
                         var lassoTop = realOffset.top - lassoStartPosition.top;
                         var lassoLeft = realOffset.left - lassoStartPosition.left;
 
@@ -241,6 +266,10 @@
      */
     var fn = {
         isElementCollidingWithArea: function (element, area) {
+            if($.isEmptyObject(element) || $.isEmptyObject(area)) {
+                return false;
+            }
+
             return !(area.left > (element.left + element.width) ||
                 (area.left + area.width) < element.left ||
                 area.top > (element.top + element.height) ||
