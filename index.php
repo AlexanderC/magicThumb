@@ -50,6 +50,7 @@
     </style>
 </head>
 <body>
+    <h4><a href="http://blog.alexanderc.me/2013/06/25/text.jquery-magic-select-plugin-homepage/" rel="me follow">Back to the blog...</a></h4>
     <div class="container">
         <?php for($i = 0; $i < 200; $i++): ?>
             <div class="item">Item #<?=$i?></div>
