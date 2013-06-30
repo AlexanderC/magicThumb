@@ -64,6 +64,16 @@
             background-size: cover;
         }
 
+        a {
+            color: #40E0D0;
+            text-decoration: none;
+        }
+
+        h4 {
+            text-align: right;
+            margin-right: 50px;
+        }
+
         .container {
             width: 100%;
             height: 100%;
@@ -108,7 +118,7 @@
     </style>
 </head>
 <body>
-    <h4><a href="#" rel="me follow">Back to the blog...</a></h4>
+    <h4><a href="http://blog.alexanderc.me/2013/06/30/text.jquery-magic-thumb-plugin-homepage/" rel="me follow">Back to the blog...</a></h4>
     <div class="container">
         <div class="image-area" data-img="img/homealone.jpg" data-size='{"width": 200, "height": 200}'>
             <!-- Thumbnail Container -->

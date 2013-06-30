@@ -5,7 +5,7 @@
     <ignored path="lasso.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372104384690" ignored="false" />
-    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372597828864" ignored="false" />
+    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372598279832" ignored="false" />
     <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372172271685" ignored="false" />
     <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372591187544" ignored="false" />
     <file path="/README.md" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372595099214" ignored="false" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="70" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.26056337">
+            <state line="73" column="31" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.45585585">
               <folding />
             </state>
           </provider>
@@ -374,7 +374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="70" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.26056337">
+        <state line="73" column="31" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.45585585">
           <folding />
         </state>
       </provider>
