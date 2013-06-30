@@ -43,6 +43,7 @@
     var whileMovingCallback = false; // Callback applied while user keep moving image
     var endMovingCallback = false; // Callback applied when user ends moving image
     var eventsNamespace = ".magicThumbMaker"; // Namespace used for all events
+    var initialPositionDataAttribute = 'initial-position';
 
     /**
      *
@@ -64,6 +65,7 @@
             endMovingCallback = options.endMovingCallback || endMovingCallback;
             eventsNamespace = options.eventsNamespace || eventsNamespace;
             loaderHtml = options.loaderHtml || loaderHtml;
+            initialPositionDataAttribute = options.initialPositionDataAttribute || initialPositionDataAttribute;
 
             this.each(function () {
                 var container = $(this);
@@ -78,10 +80,12 @@
                 var isMoving = false;
 
                 // define default background position
-                var moveInfo = {
+                var moveInfo = container.data(initialPositionDataAttribute) || {
                     top: 0,
                     left: 0
                 };
+                moveInfo.top = -moveInfo.top;
+                moveInfo.left = -moveInfo.left;
                 moveInfo.height = containerSize.height;
                 moveInfo.width = containerSize.width;
 

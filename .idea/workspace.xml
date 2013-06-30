@@ -5,11 +5,11 @@
     <ignored path="lasso.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372104384690" ignored="false" />
-    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372598279832" ignored="false" />
+    <file path="/index.php" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372599059544" ignored="false" />
     <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372172271685" ignored="false" />
     <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372591187544" ignored="false" />
     <file path="/README.md" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372595099214" ignored="false" />
-    <file path="/jquery.magicThumbMaker.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372596788048" ignored="false" />
+    <file path="/jquery.magicThumbMaker.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372598851064" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="31" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.45585585">
+            <state line="15" column="94" selection-start="491" selection-end="491" vertical-scroll-proportion="0.4054054">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="jquery.magicThumbMaker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.magicThumbMaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="57" selection-start="27972" selection-end="27972" vertical-scroll-proportion="0.0">
+            <state line="45" column="40" selection-start="20938" selection-end="20954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,6 +62,7 @@
         <option value="$PROJECT_DIR$/js/jquery.lasso.js" />
         <option value="$PROJECT_DIR$/js/jquery.magicSelect.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/js/jquery.magicThumbMaker.js" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
@@ -365,16 +366,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="4" selection-start="2817" selection-end="2817" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.magicThumbMaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="57" selection-start="27972" selection-end="27972" vertical-scroll-proportion="0.0">
+        <state line="45" column="40" selection-start="20938" selection-end="20954" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="31" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.45585585">
+        <state line="15" column="94" selection-start="491" selection-end="491" vertical-scroll-proportion="0.4054054">
           <folding />
         </state>
       </provider>

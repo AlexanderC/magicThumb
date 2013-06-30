@@ -4,11 +4,18 @@
     <title>jQuery Thumb Maker Plugin test page</title>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/jquery.magicThumbMaker.js"></script>
 
     <script>
         (function($) {
             $().ready(function() {
+                var lastPosition = $.cookie('last');
+
+                if(lastPosition) {
+                    $(".image-area").data("initial-position", jQuery.parseJSON(lastPosition));
+                }
+
                 var start = $(".start");
                 var moving = $(".moving");
                 var end = $(".end");
@@ -44,6 +51,8 @@
                         end.html("T-" + moveInfo.top + "/L-" + moveInfo.left);
 
                         console.log(moveInfo);
+
+                        $.cookie('last', JSON.stringify(moveInfo));
                     }
                 });
             });
