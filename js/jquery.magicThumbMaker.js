@@ -121,6 +121,8 @@
                     container.unbind(containerStartEvents);
                     container.bind(containerStartEvents, function(event) {
                         if(event.type == "mousedown") {
+                            logic.assureCompatibleEventData(event, container);
+
                             startEvent = $.extend(startEvent, event);
                             startEvent.offsetX += moveInfo.left;
                             startEvent.offsetY += moveInfo.top;
@@ -158,6 +160,8 @@
                     container.bind(containerMoveEvents, function(event) {
                         if(event.type == "mousemove") {
                             if(isMoving) {
+                                logic.assureCompatibleEventData(event, container);
+
                                 moveInfo = {
                                     top: startEvent.offsetY - event.offsetY,
                                     left: startEvent.offsetX - event.offsetX
@@ -189,15 +193,31 @@
         }
     };
 
+    /**
+     *
+     * @type {{moveBackground: Function, assureCompatibleEventData: Function}}
+     */
     var logic = {
         moveBackground: function(moveInfo, container, image) {
             container.css({
                 background: "url(" + image.src + ") no-repeat",
                 "background-position": moveInfo.left + "px " + moveInfo.top + "px"
             });
+        },
+        assureCompatibleEventData: function(event, container) {
+            if(!event.offsetX && !event.offsetY) {
+                var offset = container.offset();
+
+                event.offsetX = event.pageX - offset.left;
+                event.offsetY = event.pageY - offset.top;
+            }
         }
     };
 
+    /**
+     *
+     * @type {{isCallback: Function}}
+     */
     var fn = {
         isCallback: function (func) {
             return func instanceof Function;
