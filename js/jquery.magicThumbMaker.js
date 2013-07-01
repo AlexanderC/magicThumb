@@ -115,8 +115,13 @@
                     });
                     imageElement.remove();
 
+                    //set image once
+                    container.css({
+                        background: "url(" + image.src + ") no-repeat"
+                    });
+
                     // set background position
-                    logic.moveBackground(moveInfo, container, image);
+                    logic.moveBackground(moveInfo, container);
 
                     var startEvent = {};
 
@@ -176,7 +181,7 @@
                                 moveInfo.top = moveInfo.top >= -containerDiffImage.top ? moveInfo.top : -containerDiffImage.top;
                                 moveInfo.left = moveInfo.left >= -containerDiffImage.left ? moveInfo.left : -containerDiffImage.left;
 
-                                logic.moveBackground(moveInfo, container, image);
+                                logic.moveBackground(moveInfo, container);
 
                                 if(fn.isCallback(whileMovingCallback)) {
                                     var info = $.extend({}, moveInfo);
@@ -200,9 +205,8 @@
      * @type {{moveBackground: Function, assureCompatibleEventData: Function}}
      */
     var logic = {
-        moveBackground: function(moveInfo, container, image) {
+        moveBackground: function(moveInfo, container) {
             container.css({
-                background: "url(" + image.src + ") no-repeat",
                 "background-position": moveInfo.left + "px " + moveInfo.top + "px"
             });
         },

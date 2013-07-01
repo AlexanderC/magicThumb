@@ -9,7 +9,7 @@
     <file path="/jquery.lasso.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372172271685" ignored="false" />
     <file path="/jquery.magicSelect.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372591187544" ignored="false" />
     <file path="/README.md" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372595099214" ignored="false" />
-    <file path="/jquery.magicThumbMaker.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372612412174" ignored="false" />
+    <file path="/jquery.magicThumbMaker.js" changelist="6d36225c-6005-455c-b97b-470c63255458" time="1372668501133" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="60" selection-start="3859" selection-end="3859" vertical-scroll-proportion="0.5405405">
+            <state line="129" column="60" selection-start="3859" selection-end="3859" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.magicThumbMaker.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.magicThumbMaker.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jquery.magicThumbMaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="75" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+            <state line="207" column="22" selection-start="27679" selection-end="27693" vertical-scroll-proportion="0.9457505">
               <folding />
             </state>
           </provider>
@@ -63,8 +63,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/jquery.magicThumbMaker.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/jquery.magicThumbMaker.js" />
       </list>
     </option>
   </component>
@@ -378,16 +378,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.magicThumbMaker.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="75" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="129" column="60" selection-start="3859" selection-end="3859" vertical-scroll-proportion="-12.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/jquery.magicThumbMaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="60" selection-start="3859" selection-end="3859" vertical-scroll-proportion="0.5405405">
+        <state line="207" column="22" selection-start="27679" selection-end="27693" vertical-scroll-proportion="0.9457505">
           <folding />
         </state>
       </provider>
